@@ -7,7 +7,7 @@ import (
 	"github.com/gophercloud/gophercloud/v2/openstack/sharedfilesystems/v2/availabilityzones"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/terraform-provider-openstack/utils/v2/hashcode"
+	"github.com/k88122097/utils/v2/hashcode"
 )
 
 func dataSourceSharedFilesystemAvailabilityZonesV2() *schema.Resource {

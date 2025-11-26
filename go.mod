@@ -1,4 +1,4 @@
-module github.com/terraform-provider-openstack/terraform-provider-openstack/v3
+module github.com/k88122097/terraform-provider-openstack/v3
 
 go 1.24.0
 
@@ -8,10 +8,10 @@ require (
 	github.com/gophercloud/utils/v2 v2.0.0-20250710092215-8f6f0255f600
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.38.1
 	github.com/hashicorp/terraform-plugin-testing v1.13.3
+	github.com/k88122097/utils/v2 v2.0.0
 	github.com/klauspost/compress v1.18.1
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/stretchr/testify v1.11.1
-	github.com/terraform-provider-openstack/utils/v2 v2.0.0-20251008071556-6ca14d74255d
 	github.com/ulikunitz/xz v0.5.15
 	gopkg.in/yaml.v2 v2.4.0
 )

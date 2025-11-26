@@ -10,7 +10,7 @@ import (
 	"github.com/gophercloud/gophercloud/v2"
 	"github.com/gophercloud/gophercloud/v2/openstack/blockstorage/v3/volumes"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/terraform-provider-openstack/utils/v2/hashcode"
+	"github.com/k88122097/utils/v2/hashcode"
 )
 
 const (

@@ -17,7 +17,7 @@ import (
 	"github.com/gophercloud/gophercloud/v2/openstack/networking/v2/ports"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/terraform-provider-openstack/utils/v2/hashcode"
+	"github.com/k88122097/utils/v2/hashcode"
 )
 
 type portExtended struct {

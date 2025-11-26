@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/terraform-provider-openstack/utils/v2/hashcode"
+	"github.com/k88122097/utils/v2/hashcode"
 )
 
 func dataSourceComputeAvailabilityZonesV2() *schema.Resource {
