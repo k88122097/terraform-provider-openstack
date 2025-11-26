@@ -7,7 +7,7 @@ import (
 	"github.com/k88122097/terraform-provider-openstack/v3/openstack"
 )
 
-const providerAddr = "registry.terraform.io/terraform-provider-openstack/openstack"
+const providerAddr = "registry.terraform.io/k88122097/openstack"
 
 func main() {
 	// added debugMode to enable debugging for provider per https://www.terraform.io/plugin/sdkv2/debugging
