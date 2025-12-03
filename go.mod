@@ -3,17 +3,13 @@ module github.com/k88122097/terraform-provider-openstack/v3
 go 1.24.0
 
 require (
-	github.com/google/go-cmp v0.7.0
 	github.com/gophercloud/gophercloud/v2 v2.8.0
 	github.com/gophercloud/utils/v2 v2.0.0-20250710092215-8f6f0255f600
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.38.1
 	github.com/hashicorp/terraform-plugin-testing v1.13.3
 	github.com/k88122097/utils/v2 v2.0.1
-	github.com/klauspost/compress v1.18.1
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/stretchr/testify v1.11.1
-	github.com/ulikunitz/xz v0.5.15
-	gopkg.in/yaml.v2 v2.4.0
 )
 
 require (
@@ -25,6 +21,7 @@ require (
 	github.com/fatih/color v1.16.0 // indirect
 	github.com/gofrs/uuid/v5 v5.3.2 // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
+	github.com/google/go-cmp v0.7.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-checkpoint v0.5.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
