@@ -55,12 +55,6 @@ func resourceBlockStorageVolumeV3() *schema.Resource {
 				ForceNew: false,
 			},
 
-			"description": {
-				Type:     schema.TypeString,
-				Optional: true,
-				ForceNew: false,
-			},
-
 			"availability_zone": {
 				Type:     schema.TypeString,
 				Optional: true,
@@ -204,7 +198,6 @@ func resourceBlockStorageVolumeV3Create(ctx context.Context, d *schema.ResourceD
 	createOpts := &volumes.CreateOpts{
 		AvailabilityZone:   d.Get("availability_zone").(string),
 		ConsistencyGroupID: d.Get("consistency_group_id").(string),
-		Description:        d.Get("description").(string),
 		ImageID:            d.Get("image_id").(string),
 		Metadata:           expandToMapStringString(metadata),
 		Name:               d.Get("name").(string),
@@ -271,7 +264,6 @@ func resourceBlockStorageVolumeV3Read(ctx context.Context, d *schema.ResourceDat
 	log.Printf("[DEBUG] Retrieved openstack_blockstorage_volume_v3 %s: %#v", d.Id(), v)
 
 	d.Set("size", v.Size)
-	d.Set("description", v.Description)
 	d.Set("availability_zone", v.AvailabilityZone)
 	d.Set("name", v.Name)
 	d.Set("snapshot_id", v.SnapshotID)
@@ -305,10 +297,8 @@ func resourceBlockStorageVolumeV3Update(ctx context.Context, d *schema.ResourceD
 	}
 
 	name := d.Get("name").(string)
-	description := d.Get("description").(string)
 	updateOpts := volumes.UpdateOpts{
-		Name:        &name,
-		Description: &description,
+		Name: &name,
 	}
 
 	if d.HasChange("metadata") {
